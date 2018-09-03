@@ -8,22 +8,11 @@
     tools:context=".DetalheActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
-    <ImageView
         android:id="@+id/moedaId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/moeda_cara" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/botaovoltarid"

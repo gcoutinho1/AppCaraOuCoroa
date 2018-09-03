@@ -1,6 +1,7 @@
 package caraoucoroa.coutinhocompany.com.caraoucoroa;
 
 import android.content.Intent;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,12 +20,14 @@ public class DetalheActivity extends AppCompatActivity {
         imagem = findViewById(R.id.moedaId);
         botaovoltar = findViewById(R.id.botaovoltarid);
 
+
         botaovoltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // tambem pode ser utilizado o metodo finish() ao inves de startActivity
-                startActivity(new Intent(DetalheActivity.this,MainActivity.class));
+                startActivity(new Intent(DetalheActivity.this, MainActivity.class));
             }
         });
+
+
     }
 }
