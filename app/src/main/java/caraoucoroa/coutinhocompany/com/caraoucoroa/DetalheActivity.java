@@ -20,6 +20,21 @@ public class DetalheActivity extends AppCompatActivity {
         imagem = findViewById(R.id.moedaId);
         botaovoltar = findViewById(R.id.botaovoltarid);
 
+        Bundle extra = getIntent().getExtras();
+        if (extra != null){
+
+            String opcaoescolhida = extra.getString("opcao");
+            if ( opcaoescolhida.equals("cara") ){
+                //imagem cara
+                imagem.setImageDrawable( ContextCompat.getDrawable(this,R.drawable.moeda_cara));
+
+            }else{
+                //imagem coroa
+                imagem.setImageDrawable(ContextCompat.getDrawable(this,R.drawable.moeda_coroa));
+            }
+
+        }
+
 
         botaovoltar.setOnClickListener(new View.OnClickListener() {
             @Override
