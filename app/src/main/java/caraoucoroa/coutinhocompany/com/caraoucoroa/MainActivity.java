@@ -11,7 +11,7 @@ import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView botaojogar;
-    private String[] opcao = ("cara", "coroa");
+    private String[] opcao = {"cara" , "coroa"};
 
 
 
@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,DetalheActivity.class);
                 intent.putExtra("opcao", opcao[numeroAleatorio]);
 
-                startActivity(intent);
+                startActivity( intent );
 
 
             }
